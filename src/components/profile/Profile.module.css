@@ -1,0 +1,26 @@
+.profile {
+  text-align: center;
+}
+
+/* .name {
+    text-align: center;
+  }
+  .tag {
+    text-align: center;
+  }
+  .location {
+    text-align: center;
+  } */
+
+.stats {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
