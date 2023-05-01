@@ -1,10 +1,12 @@
+import PropTypes from 'prop-types';
+
 import { randomColor } from './getRandomColor';
 import css from 'components/statistics/Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
+      {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statList}>
         {stats.map(stat => (
@@ -20,4 +22,15 @@ export const Statistics = ({ title, stats }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
