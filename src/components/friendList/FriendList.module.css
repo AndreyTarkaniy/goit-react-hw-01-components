@@ -4,7 +4,7 @@
 
 .item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   align-items: center;
   gap: 25px;
@@ -12,8 +12,14 @@
   margin: 0 auto;
   margin-bottom: 20px;
   background-color: bisque;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 30px;
+
+  border-radius: 5px;
+}
+
+.avatar {
+  padding: 15px;
+  background-color: #052a3f;
   border-radius: 5px;
 }
 
