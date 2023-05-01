@@ -1,18 +1,28 @@
 .profile {
   display: flex;
+
   flex-direction: column;
   text-align: center;
-
-  padding: 20px 212px;
+  margin: 0 auto;
+  /* padding: 20px 664px; */
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+
   padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 515px;
   border-radius: 6px 6px 0 0;
+
   background-color: #f0dcc3;
 }
 
 .avatar {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 60px;
   margin-bottom: 30px;
   border-radius: 50%;
@@ -25,7 +35,6 @@
 
 .tag,
 .location,
-/* .name, */
 .stats {
   margin: 0;
 }
